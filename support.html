@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tideline Support</title>
+<style>
+  :root {
+    --ocean-ink:   #0B283C;
+    --ocean-blue:  #16466A;
+    --sea-mist:    #87C7C7;
+    --sun-gold:    #F3B851;
+    --text:        #E8F1F5;
+    --text-dim:    #9DB4C2;
+    --card-bg:     rgba(255, 255, 255, 0.06);
+    --card-border: rgba(255, 255, 255, 0.10);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--ocean-blue) 0%, var(--ocean-ink) 100%);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+
+  .brand {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .brand-name {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--sea-mist);
+    margin: 0;
+  }
+
+  .brand-tagline {
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px 0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--sea-mist);
+    margin: 32px 0 12px 0;
+    letter-spacing: 0.3px;
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 28px 28px;
+    margin-bottom: 24px;
+  }
+
+  .faq-item {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .faq-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .faq-item:first-child {
+    padding-top: 0;
+  }
+
+  .faq-question {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  p {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin: 0 0 14px 0;
+  }
+
+  a {
+    color: var(--sun-gold);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 32px 28px;
+  }
+  .contact-email {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--sun-gold);
+    margin-top: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--sun-gold);
+    border-radius: 999px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  .footer a {
+    color: var(--sea-mist);
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="brand">
+      <p class="brand-name">TIDELINE</p>
+      <p class="brand-tagline">Free tides on your lock screen</p>
+    </div>
+
+    <h1>Support</h1>
+    <p class="subtitle">
+      We're glad you're using Tideline. If you have questions or run into any issues,
+      we'd love to hear from you.
+    </p>
+
+    <h2>Get in Touch</h2>
+    <div class="card contact-card">
+      <p>The fastest way to reach us is by email. We typically respond within 1–2 business days.</p>
+      <a href="mailto:alh1523@gmail.com" class="contact-email">alh1523@gmail.com</a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="card">
+      <div class="faq-item">
+        <div class="faq-question">Where does Tideline's tide data come from?</div>
+        <p class="faq-answer">
+          Tideline uses tide predictions from the National Oceanic and Atmospheric
+          Administration (NOAA) Tides &amp; Currents API — the official source for U.S. tide data.
+          Air temperature and wind come from the National Weather Service.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Why doesn't my lock screen widget update?</div>
+        <p class="faq-answer">
+          iOS updates lock screen widgets periodically rather than in real time. Tideline
+          refreshes its data every 15 minutes. If you've just installed a widget and don't
+          see data, try locking and unlocking your phone, or remove and re-add the widget.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How accurate are the tide predictions?</div>
+        <p class="faq-answer">
+          Tide predictions come directly from NOAA and are highly accurate for U.S. coastal
+          locations. Always verify with local conditions before making decisions involving
+          water safety.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What does Tideline Pro include?</div>
+        <p class="faq-answer">
+          Tideline Pro is a one-time $3.99 purchase that unlocks a 7-day tide forecast
+          and the ability to save up to 10 tide locations. There are no subscriptions,
+          trials, or recurring charges — pay once, keep forever.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How do I restore my Pro purchase?</div>
+        <p class="faq-answer">
+          Open Tideline, tap the gear icon (top right), and tap "Restore Purchases."
+          Make sure you're signed in with the Apple ID that originally made the purchase.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Why is my location not in the list?</div>
+        <p class="faq-answer">
+          Tideline includes curated NOAA tide stations across all U.S. coastal states.
+          If you can't find your exact city, try the nearest coastal station — tide
+          patterns are similar within a small region. If you'd like a specific location
+          added, email us and let us know.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Does Tideline collect my data?</div>
+        <p class="faq-answer">
+          No. Tideline does not collect, store, or share any personal information. Your
+          location is used only on your device to find the nearest tide station. Read our
+          <a href="privacy.html">privacy policy</a> for full details.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Will Tideline support more countries?</div>
+        <p class="faq-answer">
+          Tideline currently supports U.S. coastal locations because NOAA provides the
+          most accurate, free tide data for the United States. International coverage may
+          be considered for future updates.
+        </p>
+      </div>
+    </div>
+
+    <h2>Feedback &amp; Feature Requests</h2>
+    <div class="card">
+      <p>
+        Tideline is an indie app built with care in Maine. If you have ideas for new
+        features, found a bug, or just want to say hello — we'd love to hear from you.
+        Every email is read and replied to personally.
+      </p>
+      <p>
+        Email <a href="mailto:alh1523@gmail.com">alh1523@gmail.com</a> with your
+        feedback or feature ideas.
+      </p>
+    </div>
+
+    <div class="footer">
+      Made with care in Maine.<br>
+      <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="index.html">Home</a>
+    </div>
+
+  </div>
+</body>
+</html>
